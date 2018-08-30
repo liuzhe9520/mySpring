@@ -1,0 +1,17 @@
+spring:
+  profiles: peer1
+server:
+  port: 8889
+eureka:
+  instance:
+    hostname: peer1
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer1:8889/eureka/
+
+management:
+  port: 9001
+  security: 
+    enabled: false               

@@ -1,0 +1,16 @@
+endpoints:
+  shutdown:
+    enabled : true
+    
+spring:
+  profiles:
+    active: peer1       
+      
+my:
+  name: liuzhe
+  age: 25
+  number: ${random.int}
+  uuid: ${random.uuid}  
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i am ${my.name}      

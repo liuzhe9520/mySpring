@@ -1,0 +1,17 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:8890/eureka/
+server:
+  port: 8764
+spring:
+  application:
+    name: service-ribbon
+    
+stores:
+  ribbon:
+    listOfServers: baidu.com,google.com
+ribbon:
+  eureka:
+    enabled: false
+            
